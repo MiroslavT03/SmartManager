@@ -5,12 +5,14 @@
 export const environment = {
   production: false,
   firebase: {
-    apiKey: "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-    authDomain: "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-    databaseURL: "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-    projectId: "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-    storageBucket: "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-    messagingSenderId: "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+    apiKey: "AIzaSyDckdAsieUeV-YMbziV3XxRZq1_Wmx4oOc",
+    authDomain: "smart-manager-e3ef2.firebaseapp.com",
+    databaseURL: "https://smart-manager-e3ef2.firebaseio.com",
+    projectId: "smart-manager-e3ef2",
+    storageBucket: "smart-manager-e3ef2.appspot.com",
+    messagingSenderId: "210376698241",
+    appId: "1:210376698241:web:41dab01c89e3941c236080",
+    measurementId: "G-81CQPKWS3H"
   }
 };
 

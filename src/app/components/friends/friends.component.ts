@@ -2,13 +2,12 @@ import { Component, OnInit, NgZone } from '@angular/core';
 import { AuthService } from '../../shared/services/auth.service';
 import { Router } from '@angular/router';
 
-
 @Component({
-  selector: 'app-dashboard',
-  templateUrl: './dashboard.component.html',
-  styleUrls: ['./dashboard.component.css']
+  selector: 'app-friends',
+  templateUrl: './friends.component.html',
+  styleUrls: ['./friends.component.css']
 })
-export class DashboardComponent implements OnInit {
+export class FriendsComponent implements OnInit {
 
   constructor(
     public authService: AuthService,
@@ -16,6 +15,7 @@ export class DashboardComponent implements OnInit {
     public ngZone: NgZone
   ) { }
 
-  ngOnInit() { }
+  ngOnInit() {
+  }
 
 }

@@ -1,8 +1,13 @@
 <!-- Top navigation -->
 <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
   <a class="navbar-brand col-sm-3 col-md-2 mr-0" routerLink="/register-student">
-    <img class="brand-logo" src="assets/logo-positronx-white.svg" alt="positronX.io Logo">
-    <span class="dasboard-text">Dashboard</span>
+    <!-- <img class="brand-logo" src="assets/logo-positronx-white.svg" alt="positronX.io Logo"> -->
+    <span class="dasboard-text active">Dashboard</span>
+    <!-- <i class="fa fa-address-card" aria-hidden="true"></i> -->
+    <!-- <span class="dasboard-text">Groups</span> -->
+    
+    <!-- <span class="dasboard-text">Friends</span> -->
+    <!-- <i class="far fa-handshake"></i> -->
   </a>
 </nav>
 
@@ -13,17 +18,27 @@
     <nav class="col-md-2 d-md-block bg-light sidebar">
       <div class="sidebar-sticky">
         <ul class="nav flex-column">
+
           <li class="nav-item">
             <a class="nav-link active">
               <i class="fas fa-user"></i>User Profile
             </a>
           </li>
+
+          <!-- Friends -->
+          <li class="nav-item">
+            <a class="nav-link" (click)="FriendsService.GetFriends()">
+              <i class="far fa-handshake"></i>Friends
+            </a>
+          </li>
+
           <!-- Calling SignOut() Api from AuthService -->
           <li class="nav-item">
             <a class="nav-link" (click)="authService.SignOut()">
               <i class="fas fa-sign-out-alt"></i>Log out
             </a>
           </li>
+
         </ul>
       </div>
     </nav>
@@ -35,6 +50,8 @@
         <div class="pt-3 pb-2 mb-3 border-bottom">
           <h1 class="h2">User Profile</h1>
         </div>
+
+
         <!-- Show user data when logged in -->
         <div class="row" *ngIf="authService.userData as user">
           <div class="col-md-12">
